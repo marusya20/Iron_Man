@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: #052238;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.moon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+}
+
+.firstCloud {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  max-width: 600px;
+}
+
+.secondCloud {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  max-width: 600px;
+}
+
+.jet {
+  position: absolute;
+  left: 150px;
+  top: 50px;
+  max-width: 100%;
+  transform: scale(0);
+}
+
+.ironMan {
+  position: absolute;
+  top: 110%;
+  z-index: 10000;
+  transform: scale(0);
+}
+
+main {
+  width: 100%;
+  height: 360px;
+  background-color: #052238;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(to top, #052238, transparent);
+  z-index: 100000;
+}
+
+.title {
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text {
+  margin: 0 50px 0 50px;
+  color: white;
+  font-family: open-sans, sans-serif;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.7;
+}
+
+footer {
+  width: 100%;
+  background-color: #052238;
+}
+
+footer p {
+  color: white;
+  font-family: open-sans, sans-serif;
+  font-style: normal;
+  font-size: 10px;
+  text-align: center;
+  padding: 15px 0 15px 0;
+}
